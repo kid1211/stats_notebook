@@ -90,7 +90,7 @@ Step 2 Identify Test Statistic
 Binomial Probability
 p = 0.5
 n = 50
-success = 36
+success = 36 
 
 Step 3 Determin P-Value
 
@@ -110,4 +110,19 @@ it much more likely for a women to be chosen versus a man
 
 ## One-tailed vs two-tailed tests
 
- 
+Two tailed tests if we are testign for both tail end
+
+## significance test for proportions
+
+
+![alt text](../assets/significanceLevelStep1a.png)
+![alt text](../assets/significanceLevelStep1b.png)
+![alt text](../assets/significanceLevelStep2.png)
+
+p hat is the sample proportion
+p sub zero is the proportion from our null hypothesis
+n is sample size
+
+get p-score
+
+https://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/what-is-a-z-score-what-is-a-p-value.htm
