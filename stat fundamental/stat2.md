@@ -51,8 +51,7 @@ Beyond limits
 
 > took a poll, and 55% selected candidate A and 45% selected Candidate B. 100 voters. 95% confident interval.
 
-Z-scores tell us how many standard deviations away from the mean we would need to be to capture a certain percentage of the total distribution. If we want 95% confidence level, that would mean 2.5% of the area under the curve on both side would not be included. 
-
+Z-scores tell us how many standard deviations away from the mean we would need to be to capture a certain percentage of the total distribution. If we want 95% confidence level, that would mean 2.5% of the area under the curve on both side would not be included.
 
 $$z-score = \frac{x_i - \overline{x} }{std} $$
 $$ x_i = data \space point $$
@@ -92,7 +91,7 @@ p = 0.5
 n = 50
 success = 36 
 
-Step 3 Determin P-Value
+Step 3 Determine P-Value
 
 Looking for the probability that the number of women chosen for the jury-panel would be 36 or more.
 
@@ -159,7 +158,6 @@ if Ha then we reject it.
 
 Our significance level is 5%. If this has less than a five percent chance of occurring, then we reject our null hypothesis.
 
-
 ![alt text](../assets/TestStatisticDogfood.png)
 
 Solution:
@@ -173,3 +171,9 @@ alpha > p-value  => Reject H0
 
 TypeI: False Positive (more than 125 but no cancer)
 TypeII: False Negative (Under 125 but they do have cancer) <- too sensitive
+
+## When to reject
+
+If our significance level is 5% and our p-value is calculated as 0.016 we should reject the null hypothesis.
+
+p-value is the possibility the Alternative hypothesis that happend
