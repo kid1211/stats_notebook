@@ -122,7 +122,54 @@ Two tailed tests if we are testign for both tail end
 p hat is the sample proportion
 p sub zero is the proportion from our null hypothesis
 n is sample size
-
 get p-score
 
-https://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/what-is-a-z-score-what-is-a-p-value.htm
+[p-value/z-score](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/what-is-a-z-score-what-is-a-p-value.htm)
+A Z-score describes your deviation from the mean in units of standard deviation. It is not explicit as to whether you accept or reject your null hypothesis.
+
+A p-value is the probability that under the null hypothesis we could observe a point that is as extreme as your statistic. 
+
+Step 3: Determine P-value
+$$z_{p} = 1.79$$
+z-score = 0.9633 (from z-score chart you can find this)
+p-value = 1 - 0.9633 = 0.0367
+
+Step 4: Compare P-value to fixed significance
+
+fixed significance = 0.05
+compare to p-value = .0367
+thus we can reject it. 
+
+[!important]
+using the alpha to z, we don't even need to calculate p-value lol
+
+5%
+![alt text](../assets/rejectHypo.png)
+2%
+![alt text](../assets/2percentRejection.png)
+
+## Significance level
+
+We want 20lbs of dog food
+
+H0: u >= 20.15
+Ha: u < 20.15lbs
+
+if Ha then we reject it.
+
+Our significance level is 5%. If this has less than a five percent chance of occurring, then we reject our null hypothesis.
+
+
+![alt text](../assets/TestStatisticDogfood.png)
+
+Solution:
+alpha = 0.05
+p-value = 0.0274
+alpha > p-value  => Reject H0
+
+## Type I and Type II
+
+![alt text](../assets/TwoTypeError.png)
+
+TypeI: False Positive (more than 125 but no cancer)
+TypeII: False Negative (Under 125 but they do have cancer) <- too sensitive
